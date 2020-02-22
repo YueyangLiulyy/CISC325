@@ -4,9 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -17,6 +19,7 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Calendar;
 
@@ -24,17 +27,21 @@ public class loginActivity extends AppCompatActivity {
     private static final String TAG = "loginActivity";
     private TextView mDisplayDate;
     private DatePickerDialog.OnDateSetListener mDateSetListener;
-    private static String user_gender;
-    private static String user_goal;
     private static String user_dob;
+    private static String user_gender;
     private static String user_height;
     private static String user_weight;
+    private static String user_goal;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        if(loginStatus()){
+            goHomePage();
+        }
         setGenderSpinner();
         setGoalSpinner();
         setDate_getDob();
@@ -43,6 +50,8 @@ public class loginActivity extends AppCompatActivity {
         getHeight();
         getWeight();
         setButton();
+
+
 
 
 
@@ -120,6 +129,7 @@ public class loginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(user_gender !=null & user_goal != null & user_dob != null
                 & user_height != null & user_weight != null){
+                    storeData();
                     goHomePage();
                 }
             }
@@ -210,6 +220,24 @@ public class loginActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    private void storeData(){
+        SharedPreferences sharedPreferences = getSharedPreferences("share", MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+//        editor.putString("user_dob", user_dob);
+//        editor.putString("user_gender", user_gender);
+//        editor.putString("user_height", user_height);
+//        editor.putString("user_weight", user_weight);
+//        editor.putString("user_goal", user_goal);
+        editor.putBoolean(getString(R.string.login_status), true);
+        editor.apply();
+        Toast.makeText(this, "status saved", Toast.LENGTH_SHORT).show();
+    }
+
+    private boolean loginStatus(){
+        SharedPreferences sharedPreferences = getSharedPreferences("share", MODE_PRIVATE);
+        return sharedPreferences.getBoolean(getString(R.string.login_status),false);
     }
 
 

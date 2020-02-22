@@ -9,4 +9,5 @@
         <item>Gain muscle</item>
         <item>Loose weight</item>
     </string-array>
+    <string name="login_status">com.example.fitnessapp.login</string>
 </resources>
