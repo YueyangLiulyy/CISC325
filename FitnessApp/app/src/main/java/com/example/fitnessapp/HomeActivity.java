@@ -2,6 +2,7 @@ package com.example.fitnessapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -14,10 +15,11 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        setButton();
+        setLogoutButton();
+        setButtons();
     }
 
-    private void setButton(){
+    private void setLogoutButton(){
         Button logoutBtn = findViewById(R.id.logoutButton);
         logoutBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,5 +35,61 @@ public class HomeActivity extends AppCompatActivity {
         editor.putBoolean(getString(R.string.login_status), false);
         editor.apply();
         Toast.makeText(this, "status saved", Toast.LENGTH_SHORT).show();
+    }
+
+    private void setButtons(){
+        Button execriseBtn = findViewById(R.id.execriseButton);
+        execriseBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goExecrisePage();
+            }
+        });
+
+        Button nutritionBtn = findViewById(R.id.nutritionButton);
+        nutritionBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goNutritionPage();
+            }
+        });
+
+        Button calendarBtn = findViewById(R.id.calendarButton);
+        calendarBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goCalendarPage();
+            }
+        });
+
+        Button profileBtn = findViewById(R.id.profileButton);
+        profileBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goProfilePage();
+            }
+        });
+
+
+    }
+
+    private void goExecrisePage(){
+        Intent intent = new Intent(this, ExecriseActivity.class);
+        startActivity(intent);
+    }
+
+    private void goNutritionPage(){
+        Intent intent = new Intent(this, NutritionActivity.class);
+        startActivity(intent);
+    }
+
+    private void goCalendarPage(){
+        Intent intent = new Intent(this, CalendarActivity.class);
+        startActivity(intent);
+    }
+
+    private void goProfilePage(){
+        Intent intent = new Intent(this, ProfileActivity.class);
+        startActivity(intent);
     }
 }
