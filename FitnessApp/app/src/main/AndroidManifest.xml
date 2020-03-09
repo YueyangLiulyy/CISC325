@@ -11,9 +11,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".dumbellFlyeActivity" />
-        <activity
-            android:name=".ui.login.DumbellFlye"
-            android:label="@string/title_activity_dumbell_flye" />
         <activity android:name=".ViewDateExecrise" />
         <activity android:name=".AddCalendarActivity" />
         <activity android:name=".scrollView" />
@@ -23,6 +20,8 @@
         <activity android:name=".CalendarActivity" />
         <activity android:name=".NutritionActivity" />
         <activity android:name=".HomeActivity" />
+        <activity android:name=".Controller.NutritionAdd" ></activity>
+        <activity android:name=".Controller.NutritionPage" android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
         <activity android:name=".loginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -119,4 +119,18 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="recommend">Recommendation</string>
+    <string name="food1">food1</string>
+    <string name="food2">food2</string>
+    <string name="food3">food3</string>
+    <string name="refresh">refresh</string>
+    <string name="back">Back</string>
+    <string name="plus">add</string>
+    <string name="food_dialog">\n How many pieces you have eaten:  \n</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="calo">Calories</string>
+    <string name="carbo">Carbohydrates</string>
+    <string name="protein">Proteins</string>
+    <string name="fats">Fats</string>
 </resources>

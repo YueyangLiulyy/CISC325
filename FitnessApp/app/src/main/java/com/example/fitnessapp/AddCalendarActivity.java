@@ -106,7 +106,6 @@ public class AddCalendarActivity extends AppCompatActivity {
         if(pushup) addToCalendar(date, getString(R.string.pushup));
         if(chestPressMachine) addToCalendar(date, getString(R.string.chestPressMachine));
         if(dumbbellFlye) addToCalendar(date, getString(R.string.dumbbellFlye));
-        testing(date);
 
 
     }
@@ -119,17 +118,7 @@ public class AddCalendarActivity extends AppCompatActivity {
         editor.apply();
     }
 
-    private void testing(String date){
-        SharedPreferences sharedPreferences = getSharedPreferences("chestDate", MODE_PRIVATE);
-        Set<String> result = sharedPreferences.getStringSet(date, new HashSet<String>());
-        String so = "";
-        for(String str:result){
-            so += str;
-        }
-        TextView textView = findViewById(R.id.test);
-        textView.setText(so);
 
-    }
 
     private void alert(final String date, final Long datel){
 //        final Context context = getApplicationContext();

@@ -11,6 +11,8 @@ import android.widget.Button;
 
 import android.widget.Toast;
 
+import com.example.fitnessapp.Controller.NutritionPage;
+
 public class HomeActivity extends AppCompatActivity {
     int waterLevel = 1;
 
@@ -69,7 +71,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     private void goNutritionPage(){
-        Intent intent = new Intent(this, NutritionActivity.class);
+        Intent intent = new Intent(this, NutritionPage.class);
         startActivity(intent);
     }
 
