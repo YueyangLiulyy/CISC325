@@ -223,7 +223,7 @@ public class loginActivity extends AppCompatActivity {
     }
 
     private void storeData(){
-        SharedPreferences sharedPreferences = getSharedPreferences("share", MODE_PRIVATE);
+        SharedPreferences sharedPreferences = getSharedPreferences("login_status", MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
 //        editor.putString("user_dob", user_dob);
 //        editor.putString("user_gender", user_gender);
@@ -236,7 +236,7 @@ public class loginActivity extends AppCompatActivity {
     }
 
     private boolean loginStatus(){
-        SharedPreferences sharedPreferences = getSharedPreferences("share", MODE_PRIVATE);
+        SharedPreferences sharedPreferences = getSharedPreferences("login_status", MODE_PRIVATE);
         return sharedPreferences.getBoolean(getString(R.string.login_status),false);
     }
 

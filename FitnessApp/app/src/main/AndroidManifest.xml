@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.fitnessapp">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -9,7 +10,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ExecriseActivity"></activity>
+        <activity android:name=".dumbellFlyeActivity" />
+        <activity
+            android:name=".ui.login.DumbellFlye"
+            android:label="@string/title_activity_dumbell_flye" />
+        <activity android:name=".ViewDateExecrise" />
+        <activity android:name=".AddCalendarActivity" />
+        <activity android:name=".scrollView" />
+        <activity android:name=".ChestHomeActivity" />
+        <activity android:name=".ExecriseActivity" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".CalendarActivity" />
         <activity android:name=".NutritionActivity" />

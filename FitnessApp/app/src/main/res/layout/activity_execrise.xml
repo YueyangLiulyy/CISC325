@@ -19,6 +19,8 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="40dp"
         android:layout_marginRight="40dp"
@@ -74,6 +76,8 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="40dp"
         android:layout_marginRight="40dp"
@@ -91,34 +95,34 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="100dp"
-                    android:text="1" />
+                    android:id="@+id/chestButton1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="100dp"
-                    android:text="2" />
+                    android:id="@+id/chestButton2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="100dp"
-                    android:text="3" />
+                    android:id="@+id/chestButton3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="100dp"
-                    android:text="4" />
+                    android:id="@+id/chestButton4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="100dp"
-                    android:text="5" />
+                    android:id="@+id/chestButton5"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="100dp"
-                    android:text="6" />
+                    android:id="@+id/chestButton6"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
 
             </LinearLayout>
         </HorizontalScrollView>
@@ -150,15 +154,40 @@
         app:layout_constraintBottom_toTopOf="@+id/backScrollView"
         app:layout_constraintStart_toStartOf="@+id/backScrollView" />
 
-    <TextView
-        android:id="@+id/trySomething"
+    <CheckBox
+        android:id="@+id/backCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="200dp"
-        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/backScrollView"
+        app:layout_constraintEnd_toStartOf="@+id/backScrollView"
+        app:layout_constraintTop_toTopOf="@+id/backScrollView" />
+
+    <CheckBox
+        android:id="@+id/chestCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/chestScrollView"
+        app:layout_constraintEnd_toStartOf="@+id/chestScrollView"
+        app:layout_constraintTop_toTopOf="@+id/chestScrollView" />
+
+    <Button
+        android:id="@+id/addToCalendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="150dp"
+        android:text="Add to calendar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/testing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backScrollView"
+        tools:layout_editor_absoluteX="175dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
