@@ -16,6 +16,7 @@ public class BackHomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_back_home);
         getSetBackDefault();
         userChoice();
+
     }
 
     private void getSetBackDefault(){
@@ -45,26 +46,22 @@ public class BackHomeActivity extends AppCompatActivity {
 
 
     private void userChoice(){
-        final CheckBox checkBox1 = findViewById(R.id.benchPressCheckBox);
-
-        final CheckBox checkBox2 = findViewById(R.id.inclinedDumbbellFlyeCheckBox);
-        final CheckBox checkBox3 = findViewById(R.id.cableCrossoverCheckBox);
-        final CheckBox checkBox4 = findViewById(R.id.pushupCheckBox);
-        final CheckBox checkBox5 = findViewById(R.id.chestPressMachineCheckBox);
-        final CheckBox checkBox6 = findViewById(R.id.dumbbellFlyeCheckBox);
-        final Context context = getApplicationContext();
-        SharedPreferences sharedPreferences = getSharedPreferences("chest", MODE_PRIVATE);
+        final CheckBox checkBox1 = findViewById(R.id.pullupCheckBox);
+        final CheckBox checkBox2 = findViewById(R.id.latPulldownCheckBox);
+        final CheckBox checkBox3 = findViewById(R.id.dumbbellSingleArmRowCheckBox);
+        final CheckBox checkBox4 = findViewById(R.id.bentoverBarbellRowCheckBox);
+        SharedPreferences sharedPreferences = getSharedPreferences("back", MODE_PRIVATE);
         final SharedPreferences.Editor editor = sharedPreferences.edit();
         checkBox1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // when click it makes it checked
                 if(checkBox1.isChecked()){
-                    editor.putBoolean(getString(R.string.benchPress), true);
+                    editor.putBoolean(getString(R.string.pullup), true);
                     editor.apply();
                 }
                 else {
-                    editor.putBoolean(getString(R.string.benchPress), false);
+                    editor.putBoolean(getString(R.string.pullup), false);
                     editor.apply();
                 }
             }
@@ -73,11 +70,11 @@ public class BackHomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(checkBox2.isChecked()){
-                    editor.putBoolean(getString(R.string.inclineDumbbellFlye), true);
+                    editor.putBoolean(getString(R.string.latPulldown), true);
                     editor.apply();
                 }
                 else{
-                    editor.putBoolean(getString(R.string.inclineDumbbellFlye), false);
+                    editor.putBoolean(getString(R.string.latPulldown), false);
                     editor.apply();
                 }
             }
@@ -86,11 +83,11 @@ public class BackHomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(checkBox3.isChecked()){
-                    editor.putBoolean(getString(R.string.cableCrossover), true);
+                    editor.putBoolean(getString(R.string.dumbBellSingleArmRow), true);
                     editor.apply();
                 }
                 else{
-                    editor.putBoolean(getString(R.string.cableCrossover), false);
+                    editor.putBoolean(getString(R.string.dumbBellSingleArmRow), false);
                     editor.apply();
                 }
             }
@@ -100,44 +97,15 @@ public class BackHomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(checkBox4.isChecked()){
-                    editor.putBoolean(getString(R.string.pushup), true);
+                    editor.putBoolean(getString(R.string.bentOverBarbellRow), true);
                     editor.apply();
                 }
                 else{
-                    editor.putBoolean(getString(R.string.pushup), false);
+                    editor.putBoolean(getString(R.string.bentOverBarbellRow), false);
                     editor.apply();
                 }
             }
         });
-        checkBox5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(checkBox5.isChecked()){
-                    editor.putBoolean(getString(R.string.chestPressMachine), true);
-                    editor.apply();
-                }
-                else{
-                    editor.putBoolean(getString(R.string.chestPressMachine), false);
-                    editor.apply();
-                }
-            }
-        });
-        checkBox6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(checkBox6.isChecked()){
-                    editor.putBoolean(getString(R.string.dumbbellFlye), true);
-                    editor.apply();
-                }
-                else{
-                    editor.putBoolean(getString(R.string.dumbbellFlye), false);
-                    editor.apply();
-                }
-            }
-        });
-
-
-
 
     }
 

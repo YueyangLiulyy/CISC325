@@ -66,15 +66,6 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp" />
 
-                <Button
-                    android:id="@+id/backButton5"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp" />
-
-                <Button
-                    android:id="@+id/backButton6"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp" />
             </LinearLayout>
         </HorizontalScrollView>
     </ScrollView>

@@ -133,30 +133,30 @@ public class ExecriseActivity extends AppCompatActivity {
         }
         btn.setBackgroundResource(R.drawable.bentoverbarbellrow);
     }
-    private void setBack5(boolean status){
-        Button btn = findViewById(R.id.backButton5);
-        if(!status){
-            btn.setVisibility(View.GONE);
-        }
-        else{
-            btn.setVisibility(View.VISIBLE);
-        }
-        // replace later
-//        btn.setBackgroundResource(R.drawable.cablecrossover);
+//    private void setBack5(boolean status){
+//        Button btn = findViewById(R.id.backButton5);
+//        if(!status){
+//            btn.setVisibility(View.GONE);
+//        }
+//        else{
+//            btn.setVisibility(View.VISIBLE);
+//        }
+//        // replace later
+////        btn.setBackgroundResource(R.drawable.cablecrossover);
+//
+//    }
 
-    }
-
-    private void setBack6(boolean status){
-        Button btn = findViewById(R.id.backButton6);
-        if(!status){
-            btn.setVisibility(View.GONE);
-        }
-        else{
-            btn.setVisibility(View.VISIBLE);
-        }
-        // replace later
-//        btn.setBackgroundResource(R.drawable.pushup);
-    }
+//    private void setBack6(boolean status){
+//        Button btn = findViewById(R.id.backButton6);
+//        if(!status){
+//            btn.setVisibility(View.GONE);
+//        }
+//        else{
+//            btn.setVisibility(View.VISIBLE);
+//        }
+//        // replace later
+////        btn.setBackgroundResource(R.drawable.pushup);
+//    }
 
     private void setChest(){
         SharedPreferences sharedPreferences = getSharedPreferences("chest", MODE_PRIVATE);
