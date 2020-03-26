@@ -7,6 +7,14 @@
     tools:context=".ExecriseActivity">
 
     <Button
+        android:id="@+id/backAddButton"
+        android:layout_width="40dp"
+        android:layout_height="100dp"
+        android:background="@android:drawable/ic_input_add"
+        app:layout_constraintStart_toEndOf="@+id/backScrollView"
+        app:layout_constraintTop_toTopOf="@+id/backScrollView" />
+
+    <Button
         android:id="@+id/chestAddButton"
         android:layout_width="40dp"
         android:layout_height="100dp"
@@ -39,34 +47,34 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="100dp"
-                    android:text="1" />
+                    android:id="@+id/backButton1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="100dp"
-                    android:text="2" />
+                    android:id="@+id/backButton2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="100dp"
-                    android:text="3" />
+                    android:id="@+id/backButton3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="100dp"
-                    android:text="4" />
+                    android:id="@+id/backButton4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="100dp"
-                    android:text="5" />
+                    android:id="@+id/backButton5"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="100dp"
-                    android:text="6" />
+                    android:id="@+id/backButton6"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
             </LinearLayout>
         </HorizontalScrollView>
     </ScrollView>
@@ -128,13 +136,7 @@
         </HorizontalScrollView>
     </ScrollView>
 
-    <Button
-        android:id="@+id/backAddButton"
-        android:layout_width="40dp"
-        android:layout_height="100dp"
-        android:background="@android:drawable/ic_input_add"
-        app:layout_constraintStart_toEndOf="@+id/backScrollView"
-        app:layout_constraintTop_toTopOf="@+id/backScrollView" />
+
 
     <TextView
         android:id="@+id/textView9"

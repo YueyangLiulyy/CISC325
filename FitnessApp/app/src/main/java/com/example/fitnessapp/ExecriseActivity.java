@@ -19,7 +19,6 @@ public class ExecriseActivity extends AppCompatActivity {
         setContentView(R.layout.activity_execrise);
         setButton();
         getAvailableExe();
-        changeChest();
 
 
     }
@@ -28,10 +27,17 @@ public class ExecriseActivity extends AppCompatActivity {
         final Context context = getApplicationContext();
         final Button addToCalendarBtn = findViewById(R.id.addToCalendar);
         Button chestAddBtn = findViewById(R.id.chestAddButton);
+        Button backAddBtn = findViewById(R.id.backAddButton);
         chestAddBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                
+                goChestPage();
+            }
+        });
+        backAddBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goBackPage();
             }
         });
         addToCalendarBtn.setOnClickListener(new View.OnClickListener() {
@@ -63,9 +69,98 @@ public class ExecriseActivity extends AppCompatActivity {
     }
 
     private void getAvailableExe(){
+        setChest();
+        setBack();
+    }
+
+    private void setBack(){
+        SharedPreferences sharedPreferences = getSharedPreferences("back", MODE_PRIVATE);
+        boolean pullup = sharedPreferences.getBoolean(getString(R.string.pullup),true);
+        boolean latpulldown = sharedPreferences.getBoolean(getString(R.string.latPulldown), true);
+        boolean dumbbellsinglearmrow = sharedPreferences.getBoolean(getString(R.string.dumbBellSingleArmRow), true);
+        boolean bentoverbarbellrow = sharedPreferences.getBoolean(getString(R.string.bentOverBarbellRow),false);
+        setBack1(pullup);
+        setBack2(latpulldown);
+        setBack3(dumbbellsinglearmrow);
+        setBack4(bentoverbarbellrow);
+        // not available now
+        setChest5(false);
+        setChest6(false);
+    }
+
+    private void setBack1(boolean status){
+        Button btn = findViewById(R.id.backButton1);
+        if(!status){
+            btn.setVisibility(View.GONE);
+        }
+        else{
+            btn.setVisibility(View.VISIBLE);
+        }
+        btn.setBackgroundResource(R.drawable.pullup);
+    }
+
+    private void setBack2(boolean status){
+        Button btn = findViewById(R.id.backButton2);
+        if(!status){
+            btn.setVisibility(View.GONE);
+        }
+        else{
+            btn.setVisibility(View.VISIBLE);
+        }
+        btn.setBackgroundResource(R.drawable.latpulldown);
+
+    }
+
+    private void setBack3(boolean status){
+        Button btn = findViewById(R.id.backButton3);
+        if(!status){
+            btn.setVisibility(View.GONE);
+        }
+        else{
+            btn.setVisibility(View.VISIBLE);
+        }
+        btn.setBackgroundResource(R.drawable.dumbbellsinglearmrow);
+
+    }
+
+    private void setBack4(boolean status){
+        Button btn = findViewById(R.id.backButton4);
+        if(!status){
+            btn.setVisibility(View.GONE);
+        }
+        else{
+            btn.setVisibility(View.VISIBLE);
+        }
+        btn.setBackgroundResource(R.drawable.bentoverbarbellrow);
+    }
+    private void setBack5(boolean status){
+        Button btn = findViewById(R.id.backButton5);
+        if(!status){
+            btn.setVisibility(View.GONE);
+        }
+        else{
+            btn.setVisibility(View.VISIBLE);
+        }
+        // replace later
+//        btn.setBackgroundResource(R.drawable.cablecrossover);
+
+    }
+
+    private void setBack6(boolean status){
+        Button btn = findViewById(R.id.backButton6);
+        if(!status){
+            btn.setVisibility(View.GONE);
+        }
+        else{
+            btn.setVisibility(View.VISIBLE);
+        }
+        // replace later
+//        btn.setBackgroundResource(R.drawable.pushup);
+    }
+
+    private void setChest(){
         SharedPreferences sharedPreferences = getSharedPreferences("chest", MODE_PRIVATE);
         boolean benchPress = sharedPreferences.getBoolean(getString(R.string.benchPress),true);
-
         boolean inclineDumbbellFlye = sharedPreferences.getBoolean(getString(R.string.inclineDumbbellFlye), true);
         boolean cableCrossover = sharedPreferences.getBoolean(getString(R.string.cableCrossover), true);
         boolean pushup = sharedPreferences.getBoolean(getString(R.string.pushup),false);
@@ -148,20 +243,15 @@ public class ExecriseActivity extends AppCompatActivity {
         chestBtn.setBackgroundResource(R.drawable.dumbbellflye);
     }
 
-    private void changeChest(){
-        Button chestAddBtn = findViewById(R.id.chestAddButton);
-        chestAddBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                goChestPage();
-
-            }
-        });
-
-    }
 
     private void goChestPage(){
         Intent intent = new Intent(this, ChestHomeActivity.class);
+        startActivity(intent);
+    }
+
+    private void goBackPage(){
+        Context context = getApplicationContext();
+        Intent intent = new Intent(context, BackHomeActivity.class); // that's the problem !!
         startActivity(intent);
     }
 

@@ -99,6 +99,7 @@ public class CalendarActivity extends AppCompatActivity {
                 }
             });
         }
+
     }
 
     private void getAvailableExe(String date){

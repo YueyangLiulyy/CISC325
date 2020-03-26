@@ -16,6 +16,10 @@
     <string name="dumbbellFlye">dumbbellflye</string>
     <string name="chestPressMachine">chestpressmachine</string>
     <string name="pushup">pushup</string>
+    <string name="bentOverBarbellRow">bentoverbarbellrow</string>
+    <string name="dumbBellSingleArmRow">dumbbellsinglearmrow</string>
+    <string name="latPulldown">latpulldown</string>
+    <string name="pullup">pullup</string>
     <string name="title_activity_execrise">ExecriseActivity</string>
     <string name="yes">yes</string>
     <string name="no">no</string>

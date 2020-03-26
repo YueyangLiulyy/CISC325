@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.fitnessapp">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -10,6 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".BackHome"></activity>
+        <activity android:name=".BackHomeActivity" />
         <activity android:name=".dumbellFlyeActivity" />
         <activity android:name=".ViewDateExecrise" />
         <activity android:name=".AddCalendarActivity" />
@@ -20,8 +23,10 @@
         <activity android:name=".CalendarActivity" />
         <activity android:name=".NutritionActivity" />
         <activity android:name=".HomeActivity" />
-        <activity android:name=".Controller.NutritionAdd" ></activity>
-        <activity android:name=".Controller.NutritionPage" android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <activity android:name=".Controller.NutritionAdd" />
+        <activity
+            android:name=".Controller.NutritionPage"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".loginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
