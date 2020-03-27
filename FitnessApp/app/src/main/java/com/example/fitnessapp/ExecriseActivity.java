@@ -6,12 +6,15 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Toast;
 
 public class ExecriseActivity extends AppCompatActivity {
+    public static boolean chestChosen;
+    boolean backChosen = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,8 +46,8 @@ public class ExecriseActivity extends AppCompatActivity {
         addToCalendarBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int choice = getUserChoice();
-                if(choice!=0){
+                boolean checked = getUserChoice();
+                if(checked){
                     goCalendar();
                 }
                 else {
@@ -54,13 +57,18 @@ public class ExecriseActivity extends AppCompatActivity {
         });
     }
     // read value from the check box
-    private int getUserChoice(){
-        int m = 0;
+    private boolean getUserChoice(){
         CheckBox chestCheckBtn = findViewById(R.id.chestCheckBox);
         CheckBox backCheckBtn = findViewById(R.id.backCheckBox);
-        if(chestCheckBtn.isChecked()) m++;
-        if(backCheckBtn.isChecked()) m+=2;
-        return m;
+        if(chestCheckBtn.isChecked()){
+            ChoiceSet.doChest();
+            return true;
+        }
+        if(backCheckBtn.isChecked()){
+            ChoiceSet.doBack();
+            return true;
+        }
+        return false;
     }
 
     private void goCalendar(){
@@ -84,8 +92,8 @@ public class ExecriseActivity extends AppCompatActivity {
         setBack3(dumbbellsinglearmrow);
         setBack4(bentoverbarbellrow);
         // not available now
-        setChest5(false);
-        setChest6(false);
+//        setBack5(false);
+//        setBack6(false);
     }
 
     private void setBack1(boolean status){
@@ -166,6 +174,9 @@ public class ExecriseActivity extends AppCompatActivity {
         boolean pushup = sharedPreferences.getBoolean(getString(R.string.pushup),false);
         boolean chestPressMachine = sharedPreferences.getBoolean(getString(R.string.chestPressMachine),true);
         boolean dumbbellFlye = sharedPreferences.getBoolean(getString(R.string.dumbbellFlye), true);
+        String mesg = "push up: " + pushup +"\n" + "bench press: " + benchPress + "\n" + "incline dumbbell flye: " + inclineDumbbellFlye + "\n" + "cable cross over: " + cableCrossover + "\n" + "chest press machine: " + chestPressMachine +
+                "\n" + "dumbbell flye: " + dumbbellFlye + "\n";
+        Log.v("dam", mesg);
         setChest1(benchPress);
         setChest2(inclineDumbbellFlye);
         setChest3(cableCrossover);

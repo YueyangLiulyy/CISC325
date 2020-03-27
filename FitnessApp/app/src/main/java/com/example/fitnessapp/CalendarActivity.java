@@ -34,7 +34,7 @@ public class CalendarActivity extends AppCompatActivity {
         setContentView(R.layout.activity_calendar);
         compactCalendarView2 = findViewById(R.id.calendarView);
         compactCalendarView2.setUseThreeLetterAbbreviation(true);
-        dispearShow();
+        disappearShow();
         loadDaylist();
         final ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(false);
@@ -51,7 +51,7 @@ public class CalendarActivity extends AppCompatActivity {
         compactCalendarView2.setListener(new CompactCalendarView.CompactCalendarViewListener() {
             @Override
             public void onDayClick(Date dateClicked) {
-                dispearShow();
+                disappearShow();
                 int month = dateClicked.getMonth();
                 int dtime = dateClicked.getDate();
                 String date = "" + (month+1) + "/" + dtime;
@@ -77,7 +77,7 @@ public class CalendarActivity extends AppCompatActivity {
         SharedPreferences sharedPreferences = getSharedPreferences("ExeDate", MODE_PRIVATE);
         dayList = sharedPreferences.getStringSet(getString(R.string.execriseDay), new HashSet<String>());
         for(String str: dayList){
-            Log.v("daylist", str);
+//            Log.v("daylist", str);
             if(!str.equals("1583985600000"))
                 addEvent(Long.parseLong(str));
         }
@@ -90,7 +90,6 @@ public class CalendarActivity extends AppCompatActivity {
         calenderShowBtn.setVisibility(View.VISIBLE);
         int imageResource = getResources().getIdentifier(exe, "drawable", context.getPackageName());
         calenderShowBtn.setBackgroundResource(imageResource);
-        Log.v("exe", exe);
         if(exe.equals("dumbbellflye")){
             calenderShowBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -108,14 +107,23 @@ public class CalendarActivity extends AppCompatActivity {
         String container = "calendarShowButton";
         int i = 1;
         for(String str : result){
+            Log.v("exe", str);
             if(!str.equals("1583985600000")){
                 display(str, container+i);
                 i++;
             }
         }
+        int j = 1;
+        SharedPreferences sharedPreferences1 = getSharedPreferences("backDate", MODE_PRIVATE);
+        Set<String> result1 = sharedPreferences1.getStringSet(date,new HashSet<String>());
+        for(String str: result1){
+            display(str, container+j);
+            j++;
+        }
     }
 
-    private void dispearShow(){
+
+    private void disappearShow(){
         String container = "calendarShowButton";
         for(int i =1; i<=6; i++){
             String s = container+i;
