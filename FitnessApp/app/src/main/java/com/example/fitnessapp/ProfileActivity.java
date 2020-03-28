@@ -55,6 +55,8 @@ public class ProfileActivity extends AppCompatActivity {
         settings.edit().clear().apply();
         SharedPreferences settings2 = context.getSharedPreferences("ExeDate", Context.MODE_PRIVATE);
         settings2.edit().clear().apply();
+        SharedPreferences settings3 = context.getSharedPreferences("chosenDay", Context.MODE_PRIVATE);
+        settings3.edit().clear().apply();
         Toast.makeText(context, "done",Toast.LENGTH_SHORT).show();
 
     }

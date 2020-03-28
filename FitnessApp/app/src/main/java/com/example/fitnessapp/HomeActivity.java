@@ -6,12 +6,18 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.text.format.Time;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.fitnessapp.Controller.NutritionPage;
+
+import java.util.Calendar;
+import java.util.Date;
 
 public class HomeActivity extends AppCompatActivity {
     int waterLevel = 1;
@@ -22,6 +28,10 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         setButtons();
         restoreWater();
+        setToday();
+
+
+
     }
 
 
@@ -190,5 +200,28 @@ public class HomeActivity extends AppCompatActivity {
         else if(waterLevel == 6){
             imageView.setBackgroundResource(R.drawable.ic_water_100dp);
         }
+    }
+    private void setToday(){
+        SharedPreferences sharedPreferences = getSharedPreferences("chosenDay", MODE_PRIVATE);
+        TextView textView = findViewById(R.id.dateStatusTextView);
+        Date currentTime = Calendar.getInstance().getTime();
+        String date = currentTime.getMonth()+1 + "/" +currentTime.getDate();
+        Log.v("datetoday", date);
+        boolean result = sharedPreferences.getBoolean(date,false);
+        if(result){
+            textView.setText("work out day");
+        }
+        else{
+            textView.setText("rest day");
+        }
+    }
+
+    public void onResume()
+    {  // After a pause OR at startup
+        super.onResume();
+        setToday();
+        //Refresh your stuff here
+//        finish();
+//        startActivity(getIntent());
     }
 }

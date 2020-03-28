@@ -21,6 +21,7 @@ import android.widget.CalendarView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.fitnessapp.ui.login.LoginViewModel;
 import com.github.sundeepk.compactcalendarview.CompactCalendarView;
 import com.github.sundeepk.compactcalendarview.domain.Event;
 
@@ -62,7 +63,8 @@ public class AddCalendarActivity extends AppCompatActivity {
                 Long datel = dateClicked.getTime();
                 int month = dateClicked.getMonth();
                 int dtime = dateClicked.getDate();
-                String date = "" + (month+1) + "/" + dtime;
+                String date = month+1 + "/" + dtime;
+
                 alert(date, datel);
             }
 
@@ -109,9 +111,6 @@ public class AddCalendarActivity extends AppCompatActivity {
             if(bentoverbarbellrow) addToCalendar(date, getString(R.string.bentOverBarbellRow), "backDate");
         }
         ChoiceSet.undo();
-
-
-
     }
     private void addToCalendar(String date, String exe, String type){
         SharedPreferences sharedPreferences = getSharedPreferences(type, MODE_PRIVATE);
@@ -138,9 +137,13 @@ public class AddCalendarActivity extends AppCompatActivity {
                         getStatus(date);
                         addEvent(datel);
                         for(String str: dayList){
-//                addEvent(Long.parseLong(str));
-                            Log.v("daylist!!!!", str);
+                        addEvent(Long.parseLong(str));
                         }
+                        SharedPreferences sharedPreferences = getSharedPreferences("chosenDay", MODE_PRIVATE);
+                        SharedPreferences.Editor editor = sharedPreferences.edit();
+                        editor.putBoolean(date,true);
+                        editor.apply();
+                        Log.v("dateToo", date);
                         saveDayList();
                     }
                 }
