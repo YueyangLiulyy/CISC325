@@ -10,6 +10,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 public class ExecriseActivity extends AppCompatActivity {
@@ -58,13 +60,14 @@ public class ExecriseActivity extends AppCompatActivity {
     }
     // read value from the check box
     private boolean getUserChoice(){
-        CheckBox chestCheckBtn = findViewById(R.id.chestCheckBox);
-        CheckBox backCheckBtn = findViewById(R.id.backCheckBox);
-        if(chestCheckBtn.isChecked()){
+//        RadioGroup radioGroup = findViewById()
+        RadioButton chestRadioBtn = findViewById(R.id.chestRadioButton);
+        RadioButton backRadioBtn = findViewById(R.id.backRadioButton);
+        if(chestRadioBtn.isChecked()){
             ChoiceSet.doChest();
             return true;
         }
-        if(backCheckBtn.isChecked()){
+        if(backRadioBtn.isChecked()){
             ChoiceSet.doBack();
             return true;
         }

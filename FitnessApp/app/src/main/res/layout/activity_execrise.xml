@@ -147,22 +147,6 @@
         app:layout_constraintBottom_toTopOf="@+id/backScrollView"
         app:layout_constraintStart_toStartOf="@+id/backScrollView" />
 
-    <CheckBox
-        android:id="@+id/backCheckBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/backScrollView"
-        app:layout_constraintEnd_toStartOf="@+id/backScrollView"
-        app:layout_constraintTop_toTopOf="@+id/backScrollView" />
-
-    <CheckBox
-        android:id="@+id/chestCheckBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/chestScrollView"
-        app:layout_constraintEnd_toStartOf="@+id/chestScrollView"
-        app:layout_constraintTop_toTopOf="@+id/chestScrollView" />
-
     <Button
         android:id="@+id/addToCalendar"
         android:layout_width="wrap_content"
@@ -174,13 +158,35 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <TextView
-        android:id="@+id/testing"
+    <RadioGroup
+        android:id="@+id/RadioButtonGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/backScrollView"
-        tools:layout_editor_absoluteX="175dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/backScrollView"
+        app:layout_constraintEnd_toStartOf="@+id/chestScrollView"
+        app:layout_constraintTop_toTopOf="@+id/chestScrollView">
+
+        <RadioButton
+            android:id="@+id/chestRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            app:layout_constraintBottom_toBottomOf="@+id/chestScrollView"
+            app:layout_constraintEnd_toStartOf="@+id/chestScrollView"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <RadioButton
+            android:id="@+id/backRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            app:layout_constraintBottom_toBottomOf="@+id/backScrollView"
+            app:layout_constraintEnd_toStartOf="@+id/backScrollView"
+            app:layout_constraintTop_toTopOf="@+id/backScrollView" />
+
+    </RadioGroup>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

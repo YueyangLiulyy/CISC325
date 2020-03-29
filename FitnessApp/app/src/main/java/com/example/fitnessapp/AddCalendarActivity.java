@@ -136,9 +136,6 @@ public class AddCalendarActivity extends AppCompatActivity {
                         dayList.add(datel.toString());
                         getStatus(date);
                         addEvent(datel);
-                        for(String str: dayList){
-                        addEvent(Long.parseLong(str));
-                        }
                         SharedPreferences sharedPreferences = getSharedPreferences("chosenDay", MODE_PRIVATE);
                         SharedPreferences.Editor editor = sharedPreferences.edit();
                         editor.putBoolean(date,true);
