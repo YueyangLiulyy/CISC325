@@ -2,6 +2,7 @@ package com.example.fitnessapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import android.view.View;
@@ -20,11 +21,12 @@ public class TutorialActivity extends AppCompatActivity implements View.OnClickL
         setContentView(R.layout.activity_tutorial);
 
         viewFlipper = (ViewFlipper)findViewById(R.id.viewFlipper);
-        next = (Button) findViewById(R.id.next);
-        previous = (Button) findViewById(R.id.previous);
+        next = (Button) findViewById(R.id.nextButton);
+        previous = (Button) findViewById(R.id.previousButton);
 
         next.setOnClickListener(this);
         previous.setOnClickListener(this);
+        setFinish();
     }
 
     @Override
@@ -35,5 +37,20 @@ public class TutorialActivity extends AppCompatActivity implements View.OnClickL
         else if (v == previous) {
             viewFlipper.showPrevious();
         }
+    }
+
+    private void setFinish(){
+        Button button = findViewById(R.id.finishButton);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goHomePage();
+            }
+        });
+    }
+
+    private void goHomePage(){
+        Intent intent = new Intent(this, HomeActivity.class);
+        startActivity(intent);
     }
 }
