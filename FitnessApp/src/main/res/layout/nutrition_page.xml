@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Controller.NutritionPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/backNutrition"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/back"
+            android:src="@drawable/back" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"/>
+        <ImageView
+            android:id="@+id/addNutrition"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/plus"
+            android:src="@drawable/plus" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="460dp">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <com.example.fitnessapp.view.Column
+            android:id="@+id/column_calories"
+            android:layout_marginTop="0dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.7"/>
+        <com.example.fitnessapp.view.Column
+            android:id="@+id/column_carbos"
+            android:layout_marginTop="0dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.7"/>
+        <com.example.fitnessapp.view.Column
+            android:id="@+id/column_proteins"
+            android:layout_marginTop="0dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.7"/>
+        <com.example.fitnessapp.view.Column
+            android:id="@+id/column_fats"
+            android:layout_marginTop="0dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/calo" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/carbo" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/protein" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/fats" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/recommend" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ScrollView
+            android:id="@+id/recommendationImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp">
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/recomImage1"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp" />
+
+                    <ImageView
+                        android:id="@+id/recomImage2"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp" />
+
+                    <ImageView
+                        android:id="@+id/recomImage3"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp" />
+
+                    <ImageView
+                        android:id="@+id/recomImage4"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp" />
+
+                    <ImageView
+                        android:id="@+id/recomImage5"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp" />
+
+                    <ImageView
+                        android:id="@+id/recomImage6"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp" />
+
+                    <ImageView
+                        android:id="@+id/recomImage7"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp" />
+
+                    <ImageView
+                        android:id="@+id/recomImage8"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp" />
+                </LinearLayout>
+            </HorizontalScrollView>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+<!--    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+        <ImageView
+            android:id="@+id/nutritionFood1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/food1" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+        <ImageView
+            android:id="@+id/nutritionFood2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/food2" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+        <ImageView
+            android:id="@+id/nutritionFood3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/food3" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"/>
+
+        <ImageView
+            android:id="@+id/refreshNutrition"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="@string/refresh"
+            android:src="@drawable/refresh" />
+    </LinearLayout>-->
+
+</LinearLayout>
