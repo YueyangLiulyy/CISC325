@@ -50,6 +50,7 @@ public class loginActivity extends AppCompatActivity {
         getHeight();
         getWeight();
         setButton();
+        setButton2();
 
 
 
@@ -122,13 +123,30 @@ public class loginActivity extends AppCompatActivity {
                         this));
     }
 
+    private void setButton2(){
+        Button finishBtn = findViewById(R.id.TutorialButton);
+        finishBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                goTutorialPage();
+
+            }
+        });
+    }
+
+    private void goTutorialPage(){
+        Intent intent = new Intent(this, TutorialActivity.class);
+        startActivity(intent);
+    }
+
     private void setButton(){
         Button finishBtn = findViewById(R.id.loginFinishButton);
         finishBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(user_gender !=null & user_goal != null & user_dob != null
-                & user_height != null & user_weight != null){
+                        & user_height != null & user_weight != null){
                     storeData();
                     goHomePage();
                 }
