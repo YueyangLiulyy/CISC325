@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_drink"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/backNutritionAddDrink"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/back"
+            android:src="@drawable/back" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"/>
+        <ImageView
+            android:id="@+id/milk"
+            android:src="@drawable/milk"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"/>
+
+        <ImageView
+            android:id="@+id/wine"
+            android:src="@drawable/wine"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"/>
+        <ImageView
+            android:id="@+id/greenTea"
+            android:src="@drawable/greentea"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"/>
+
+        <ImageView
+            android:id="@+id/blackTea"
+            android:src="@drawable/blacktea"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"/>
+        <ImageView
+            android:id="@+id/beer"
+            android:src="@drawable/beer"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"/>
+
+        <ImageView
+            android:id="@+id/coke"
+            android:src="@drawable/coke"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"/>
+    </LinearLayout>
+
+
+</LinearLayout>

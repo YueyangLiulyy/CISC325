@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_fruit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/backNutritionAddFruit"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/back"
+            android:src="@drawable/back" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"/>
+        <ImageView
+            android:id="@+id/avocado"
+            android:src="@drawable/avocado"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"/>
+
+        <ImageView
+            android:id="@+id/apple"
+            android:src="@drawable/apple"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"/>
+        <ImageView
+            android:id="@+id/pear"
+            android:src="@drawable/pear"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"/>
+
+        <ImageView
+            android:id="@+id/orange"
+            android:src="@drawable/orange"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"/>
+        <ImageView
+            android:id="@+id/banana"
+            android:src="@drawable/banana"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"/>
+
+        <ImageView
+            android:id="@+id/grape"
+            android:src="@drawable/grape"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"/>
+    </LinearLayout>
+
+</LinearLayout>
