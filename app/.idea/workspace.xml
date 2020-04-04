@@ -6,7 +6,180 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35d9d046-6233-47ca-b846-601b904ff254" name="Default Changelist" comment="" />
+    <list default="true" id="35d9d046-6233-47ca-b846-601b904ff254" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/.gitignore.swp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/_BACKUP_1868.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/_BACKUP_384.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/_BASE_1868.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/_BASE_384.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/_LOCAL_1868.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/_LOCAL_384.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/_REMOTE_1868.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/_REMOTE_384.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/libs/YouTubeAndroidPlayerApi.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/androidTest/java/com/example/fitnessapp/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/ic_launcher-playstore.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/java/com/example/fitnessapp/.HomeActivity.java.swp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/java/com/example/fitnessapp/AddCalendarActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/java/com/example/fitnessapp/BackHomeActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/java/com/example/fitnessapp/CalendarActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/java/com/example/fitnessapp/ChestHomeActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/java/com/example/fitnessapp/ChoiceSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/java/com/example/fitnessapp/Controller/NutritionAdd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/java/com/example/fitnessapp/Controller/NutritionPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/java/com/example/fitnessapp/ExecriseActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/java/com/example/fitnessapp/HomeActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/java/com/example/fitnessapp/NothingSelectedSpinnerAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/java/com/example/fitnessapp/NutritionActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/java/com/example/fitnessapp/ProfileActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/java/com/example/fitnessapp/TutorialActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/java/com/example/fitnessapp/ViewDateExecrise.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/java/com/example/fitnessapp/YouTubeConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/java/com/example/fitnessapp/data/LoginDataSource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/java/com/example/fitnessapp/data/LoginRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/java/com/example/fitnessapp/data/Result.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/java/com/example/fitnessapp/data/model/LoggedInUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/java/com/example/fitnessapp/detailExeActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/java/com/example/fitnessapp/loginActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/java/com/example/fitnessapp/scrollView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/java/com/example/fitnessapp/ui/login/LoggedInUserView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/java/com/example/fitnessapp/ui/login/LoginFormState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/java/com/example/fitnessapp/ui/login/LoginResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/java/com/example/fitnessapp/ui/login/LoginViewModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/java/com/example/fitnessapp/ui/login/LoginViewModelFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/java/com/example/fitnessapp/utils/DensityUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/java/com/example/fitnessapp/utils/Images.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/java/com/example/fitnessapp/utils/MyFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/java/com/example/fitnessapp/utils/Myadapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/java/com/example/fitnessapp/view/Column.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/java/com/example/fitnessapp/view/FragmentVegie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable-v24/back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable-v24/broccoli.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable-v24/carrot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable-v24/drink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable-v24/fruit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable-v24/lettuce.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable-v24/meat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable-v24/phone.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable-v24/plus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable-v24/potatoes.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable-v24/refresh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable-v24/tab.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable-v24/tab_drink.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable-v24/tab_fruit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable-v24/tab_meat.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable-v24/tab_vegie.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable-v24/tutorial1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable-v24/vegie.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable/arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable/arrow1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable/benchpress.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable/bentoverbarbellrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable/cablecrossover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable/calendar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable/chestpressmachine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable/dumbbell.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable/dumbbellflye.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable/dumbbellsinglearmrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable/ic_add.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable/ic_remove.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable/ic_water_100dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable/ic_water_20dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable/ic_water_30dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable/ic_water_50dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable/ic_water_60dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable/ic_water_80dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable/ic_water_90dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable/inclinedumbbellflye.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable/latpulldown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable/nutrition.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable/profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable/pullup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable/pushup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable/rest.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable/test.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable/workout.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/drawable/workout2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/layout/activity_add_calendar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/layout/activity_back_home.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/layout/activity_calendar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/layout/activity_chest_home.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/layout/activity_dumbell_flye.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/layout/activity_execrise.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/layout/activity_home.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/layout/activity_nutrition.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/layout/activity_profile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/layout/activity_tutorial.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/layout/activity_view_date_execrise.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/layout/content_execrise.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/layout/fg_content.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/layout/fragment_vegie.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/layout/gender_spinner_item.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/layout/goal_spinner_item.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/layout/nutrition_add.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/layout/nutrition_page.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/menu/menu_execrise.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/values/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/values/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/app/src/test/java/com/example/fitnessapp/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/build.gradle.orig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/gradle/wrapper/.gradle-wrapper_REMOTE_442.properties.swp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/gradle/wrapper/gradle-wrapper_BACKUP_442.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/gradle/wrapper/gradle-wrapper_BACKUP_636.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/gradle/wrapper/gradle-wrapper_BASE_442.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/gradle/wrapper/gradle-wrapper_BASE_636.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/gradle/wrapper/gradle-wrapper_LOCAL_442.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/gradle/wrapper/gradle-wrapper_LOCAL_636.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/gradle/wrapper/gradle-wrapper_REMOTE_442.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/gradle/wrapper/gradle-wrapper_REMOTE_636.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/hs_err_pid25648.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/replay_pid25648.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FitnessApp/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___C__Users_55020_Desktop_Fitness_App_master_app_libs_YouTubeAndroidPlayerApi_jar_unspecified_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars___C__Users_55020_Desktop_CISC325_app_libs_YouTubeAndroidPlayerApi_jar_unspecified_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,12 +211,17 @@
     <option name="KEY_ALIAS" value="key0" />
     <option name="BUILD_TARGET_KEY" value="apk" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1Zrc2zEy02rrW2Fbuyw5qzmj1I9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="ApkExportedModule" value="app" />
     <property name="ExportApk.ApkPath" value="C:\Users\55020\Desktop\Fitness-App-master\app" />
     <property name="ExportApk.BuildVariants" value="release" />
     <property name="ExportApk.SignV2" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
@@ -139,5 +317,18 @@
       <updated>1585600449586</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
